@@ -1,0 +1,42 @@
+.main-content {
+  margin: 15px;
+}
+
+body {
+  color: white;
+background: #76b852;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content {
+  color: black;
+}
+
+.image-zoom {
+	transition: transform .2s;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.image-zoom:hover {
+	transform: scale(1.35);
+}
+
+.padded {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.bigPadding {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.justified {
+	text-align: justify;
+}
+
+.larger {
+	font-size: 17px;
+}
