@@ -22,9 +22,9 @@ const AboutMe = () => {
       <img src={self} className='ui small centered circular image' alt="james"/>
       <div class='ui hidden divider' />
       <div className='ui center aligned container'>
-        <h1>I design and develop websites.</h1>
-        <p className='bigPadding justified larger'>I became exposed to the world of the web and software development seven years ago, and from then on I never stopped moving forward. From my first 'Hello World!' page rendered using simple HTML, it quickly grew into a passion and it became a big influence why I chose Computer Science for my career path.</p>
-        <h1>Languages, tools, and frameworks I love to use</h1>
+        <h2>I design and develop websites.</h2>
+        <p className='bigPadding centered larger'>I became exposed to the world of the web and software development seven years ago, and from then on I never stopped moving forward. From my first 'Hello World!' page rendered using simple HTML, it quickly grew into a passion and it became a big influence why I chose Computer Science for my career path.</p>
+        <h2>Languages, tools, and frameworks I love to use</h2>
         <Image.Group size='tiny'>
         	<Popup trigger={<img src={html} className='ui centered image' alt="html"/>} content='HTML' />
         	<Popup trigger={<img src={css} className='ui centered image' alt="css"/>} content='CSS' />
@@ -38,7 +38,7 @@ const AboutMe = () => {
       </div>
       <div class='ui hidden divider' />
       <div className='ui center aligned container'>
-        <h1>Organizations</h1>
+        <h2>Organizations</h2>
       </div>
       <div class='ui hidden divider' />
       <div className='ui center aligned container'>
