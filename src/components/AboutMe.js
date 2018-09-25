@@ -14,7 +14,7 @@ import capes from '../assets/images/capes.png';
 import james_iec from '../assets/images/james_iec_dp.jpg';
 import james_cursor from '../assets/images/james_cursor_dp.jpg';
 import james_capes from '../assets/images/james_capes_dp.png';
-import {Button, Header, Modal, Image, Popup} from 'semantic-ui-react';
+import {Button, Header, Modal, Image, Popup, Icon} from 'semantic-ui-react';
 
 const AboutMe = () => {
   return(
@@ -24,6 +24,7 @@ const AboutMe = () => {
       <div className='ui center aligned container'>
         <h2>I design and develop websites.</h2>
         <p className='bigPadding centered larger'>I became exposed to the world of the web and software development seven years ago, and from then on I never stopped moving forward. From my first 'Hello World!' page rendered using simple HTML, it quickly grew into a passion and it became a big influence why I chose Computer Science for my career path.</p>
+        <p className='bigPadding centered larger'>I've worked on projects using different languages and frameworks, but recently, I've worked on a project using Django (back-end) and React (front-end) which became my main weapons in full stack development.</p>
         <h2>Languages, tools, and frameworks I love to use</h2>
         <Image.Group size='tiny'>
         	<Popup trigger={<img src={html} className='ui centered image' alt="html"/>} content='HTML' />
@@ -31,8 +32,8 @@ const AboutMe = () => {
         	<Popup trigger={<img src={javascript} className='ui centered image' alt="javascript"/>} content='JavaScript' />
         	<Popup trigger={<img src={react} className='ui centered image' alt="react"/>} content='React' />
         	<Popup trigger={<img src={python} className='ui centered image' alt="python"/>} content='Python' />
-        	<Popup trigger={<img src={java} className='ui centered image' alt="java"/>} content='Java' />
-        	<Popup trigger={<img src={django} className='ui centered image' alt="django"/>} content='Django' />
+        	{/*<Popup trigger={<img src={java} className='ui centered image' alt="java"/>} content='Java' />*/}
+        	{/*<Popup trigger={<img src={django} className='ui centered image' alt="django"/>} content='Django' />*/}
         	<Popup trigger={<img src={android} className='ui centered image' alt="android"/>} content='Android Development (Android Studio)' />
         </Image.Group>
       </div>
@@ -114,6 +115,26 @@ const AboutMe = () => {
           </Modal.Content>
         </Modal>
       </Image.Group>
+      </div>
+      <div class='ui hidden divider' />
+      <div className='ui center aligned container'>
+        <h2>Contact Me</h2>
+        <h3><Icon name='mail'/> jgabaja@gmail.com</h3>
+        <a href='http://www.facebook.com/jgabaja' target='_blank' rel='noopener noreferrer'>
+        <Button circular size='large' color='facebook'>
+        <Icon name='facebook'/> Facebook</Button></a>
+        <a href='https://www.twitter.com/jmsgbrl__' target='_blank' rel='noreferrer noopener'>
+        <Button circular size='large' color='twitter'>
+        <Icon name='twitter'/> Twitter</Button></a>
+        <a href='https://www.instagram.com/jmsgbrl__'target='_blank' rel='noreferrer noopener'>
+        <Button circular size='large' color='instagram'>
+        <Icon name='instagram'/> Instagram</Button></a>
+        <a href='https://linkedin.com/in/jgabaja' target='_blank' rel='noreferrer noopener'>
+        <Button circular size='large' color='linkedin'>
+        <Icon name='linkedin'/> LinkedIn</Button></a>
+        <a href='https://www.github.com/jamesabaja'target='_blank' rel='noreferrer noopener'>
+        <Button circular size='large' color='github'>
+        <Icon name='github'/> Github</Button></a>
       </div>
     </div>
   );
