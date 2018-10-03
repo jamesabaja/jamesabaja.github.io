@@ -122,19 +122,19 @@ const AboutMe = () => {
         <h3><Icon name='mail'/> jgabaja@gmail.com</h3>
         <a href='http://www.facebook.com/jgabaja' target='_blank' rel='noopener noreferrer'>
         <Button circular size='large' color='facebook'>
-        <Icon name='facebook'/> Facebook</Button></a>
+        <Icon name='facebook'/> Facebook</Button></a>{' '}
         <a href='https://www.twitter.com/jmsgbrl__' target='_blank' rel='noreferrer noopener'>
         <Button circular size='large' color='twitter'>
-        <Icon name='twitter'/> Twitter</Button></a>
+        <Icon name='twitter'/> Twitter</Button></a>{' '}
         <a href='https://www.instagram.com/jmsgbrl__'target='_blank' rel='noreferrer noopener'>
         <Button circular size='large' color='instagram'>
-        <Icon name='instagram'/> Instagram</Button></a>
+        <Icon name='instagram'/> Instagram</Button></a>{' '}
         <a href='https://linkedin.com/in/jgabaja' target='_blank' rel='noreferrer noopener'>
         <Button circular size='large' color='linkedin'>
-        <Icon name='linkedin'/> LinkedIn</Button></a>
+        <Icon name='linkedin'/> LinkedIn</Button></a>{' '}
         <a href='https://www.github.com/jamesabaja'target='_blank' rel='noreferrer noopener'>
         <Button circular size='large' color='github'>
-        <Icon name='github'/> Github</Button></a>
+        <Icon name='github'/> Github</Button></a>{' '}
       </div>
     </div>
   );

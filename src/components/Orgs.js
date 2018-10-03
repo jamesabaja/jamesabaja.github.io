@@ -1,0 +1,97 @@
+import React from 'react';
+import ieclub from '../assets/images/ieclub.png';
+import cursor from '../assets/images/cursor.png';
+import capes from '../assets/images/capes.png';
+import james_iec from '../assets/images/james_iec_dp.jpg';
+import james_cursor from '../assets/images/james_cursor_dp.jpg';
+import james_capes from '../assets/images/james_capes_dp.png';
+import {Button, Header, Modal, Image, Popup, Icon} from 'semantic-ui-react';
+
+const Orgs = () => {
+	return(
+		<div className='main-content'>
+			<div className='ui center aligned container'>
+		    	<h2>Organizations</h2>
+		    	<h4>CURSORApplicant of the following orgs? Click the corresponding org logo to check out my sig requirements/tasks!</h4>
+		    </div>
+		    <div class='ui hidden divider' />
+		    <div className='ui center aligned container'>
+		    <Image.Group size='small'>
+		    	<Modal dimmer='blurring' trigger={<img src={cursor} className='ui image image-zoom padded' alt='cursor'/>} closeIcon>
+		          	<Modal.Header>UP CURSOR <h4>UP Association of Computer Science Majors</h4></Modal.Header>
+		          	<Modal.Content image> 
+		            <Image wrapped size='massive' src={james_cursor} />
+		            <Modal.Description>
+		              	<Header>#CURSORSexy</Header>
+		              	<p>Being part of the External Affairs Committee ever since I became a member, CURSOR has offered me a lot of new learnings, experiences, and opportunities. I met people who have the same love and passion for Computer Science, CS and non-CS alike. But of course, I met committed and passionate people working towards a common goal.</p>
+		              	<Header>Why UP CURSOR?</Header>
+		              	<p>CURSOR is my first org. It saw my growth as a person, and in turn, I saw its growth as an org, too. It offered me a lot of opportunities where I can express myself, my love and passion for CS and non-CS stuff like in Awitan and in Volleybagan, well in Engg Week in general. But more than that, somehow, I found a home in CURSOR. It made me appreciate my stay in UP and DCS, making me realize I have a lot to see and experience with CURSOR, other than the four walls of the classroom.</p>
+		              	<Modal trigger={<Button>CURSOR App? Click here.</Button>} closeIcon>
+		              	<Modal.Header>CURSOR Sig Reqs</Modal.Header>
+		              	<Modal.Content>
+		                <Modal.Description>
+		                  <Header>Main Sig Reqs</Header>
+		                  <p><b><i>FIRST SIG:</i></b> Add me on <a href='https://www.facebook.com/jgabaja' target='_blank' rel='noreferrer noopener'>Facebook</a>, and follow me on <a href='https://www.twitter.com/jmsgbrl__' target='_blank' rel='noreferrer noopener'>Twitter (@jmsgbrl__)</a> and <a href='https://www.instagram.com/jmsgbrl__'target='_blank' rel='noreferrer noopener'>Instagram (@jmsgbrl__)</a> (not required if you don't have Twitter/IG, just add me on FB at the very least)</p>
+		                  <p><b><i>SECOND SIG:</i></b> Just chat with me at the tambayan, and if I feel that I've gotten to know you and the other way around, I'll give this sig. <br/><b>NOTE: Only at the tambayan!!</b></p>
+		                  <p><b><i>THIRD SIG:</i></b> M I S S I O N :) + Get the (first) sig of the following people: Luis, Tine, Micah, Nathan. </p>
+		                  <Header>Free Sigs</Header>
+		                  <p><i>Valid for my second and third sig only!!</i></p>
+		                  <p><i>(1 sig)</i> Ask for my sig if you see me in the tambayan of my other org.</p> 
+		                  <p><i>(1 sig)</i> Guess my thesis lab in one try. You can't ask others!! Just guess :)</p>
+		                  <Header>Availability</Header>
+		                  <p><b><i>MONDAY</i></b> 11:00 AM - 5:00 PM, <i>Thesis Lab</i></p>
+		                  <p><b><i>TUESDAY/THURSDAY</i></b> 11:30 AM - 1:00 PM, 2:30 PM - 4:00 PM, <i>Tambayan</i> (If I'm not there, then I'm at my other tambayan. EZ free sig)</p>
+		                  <p><b><i>WEDNESDAY</i></b> 12:30 PM - 2:30 PM, 4:00 PM onwards, <i>Tambayan</i></p> 
+		                  <p><b><i>FRIDAY</i></b>4:00 PM onwards, <i>Tambayan</i></p>
+		                </Modal.Description>
+		              </Modal.Content>
+		            </Modal>
+		            </Modal.Description>
+		          </Modal.Content>
+		        </Modal>
+		        <Modal dimmer='blurring' trigger={<img src={capes} className='ui image image-zoom padded' alt='capes'/>} closeIcon>
+		          <Modal.Header>UP CAPES <h4>UP Career Assistance Program for Engineering Students</h4></Modal.Header>
+		          <Modal.Content image>
+		            <Image wrapped size='large' src={james_capes} />
+		            <Modal.Description>
+		              <p>UP CAPES gave me an amazing opportunity in serving the College in a whole different perspective. As a project manager and back-end developer for the Online Student Services Team, I contribute in ways where I really enjoy what I do and at the same time people benefit from the services we provide.</p>
+		            </Modal.Description>
+		          </Modal.Content>
+		        </Modal>
+		        <Modal dimmer='blurring' trigger={<img src={ieclub} className='ui image image-zoom padded' alt='ieclub'/>} closeIcon>
+		          <Modal.Header>UP IE Club <h4>UP Industrial Engineering Club</h4></Modal.Header>
+		          <Modal.Content image>
+		            <Image wrapped src={james_iec} />
+		            <Modal.Description>
+		              <Header>#IEClubWin</Header>
+		              <p>You might be wondering, what's a CS student doing in an IE org (other than the fact that it's actually a University-wide org)? Quite a long story but to give you a gist, I joined IE Club because I want to widen my knowledge in the IE field, and at the same time get to know more people not just in the IE field. And I thought, IE Club is the perfect org for that. I actually got rejected the first time I applied, but got accepted the second time around. I think it was really a good decision for me to not give up when I got rejected because when I became a Clubber, it made me love IE Club even more. This was one of the most unexpected and spontaneous decisions I had done in College, and I have never regretted that decision to make IE Club a part of my life.</p>
+		              <Header>Why UP IE Club</Header>
+		              <p>IE Club wasn't meant to be part of my life, but I'm sure glad it was. IE Club opened my eyes in a lot of things, and it really sparked my interest for IE. IE Club made me bring out the best version of me. I know, very cheesy, but true. I met a lot of new people and experienced a lot of new things, and everyday with IE Club felt like a whole new journey.</p> 
+		              <Modal trigger={<Button>IE Club App? Click here.</Button>} closeIcon>
+		              <Modal.Header>IE Club Sig Tasks</Modal.Header>
+		              <Modal.Content>
+		                <Modal.Description>
+		                  <Header>DO BOTH:</Header>
+		                  <p><b><i>FIRST TASK:</i></b> Add me on <a href='https://www.facebook.com/jgabaja' target='_blank' rel='noreferrer noopener'>Facebook</a>, and follow me on <a href='https://www.twitter.com/jmsgbrl__' target='_blank' rel='noreferrer noopener'>Twitter (@jmsgbrl__)</a> and <a href='https://www.instagram.com/jmsgbrl__'target='_blank' rel='noreferrer noopener'>Instagram (@jmsgbrl__)</a> (not required if you don't have Twitter/IG, just add me on FB at the very least)</p>
+		                  <p><b><i>SECOND TASK:</i></b> Just chat with me at the tambayan, and if I feel that I've gotten to know you and the other way around, I'll sign your sigsheet the next time we meet (to make sure I really remember you!!) <br/><b>NOTE: Only at the tambayan!!</b></p>
+		                  <br/>
+		                  <p><i><b>I'll sign your sigsheet immediately if you're from CS, no need to do the tasks above :)</b></i></p>
+		                  <Header>Availability</Header>
+		                  <p><b><i>MONDAY</i></b> 11:00 AM - 5:00 PM, <i>Thesis Lab (4/F DCS aka Engg Lib 2)</i></p>
+		                  <p><b><i>TUESDAY/THURSDAY</i></b> 11:30 AM - 1:00 PM, 2:30 PM - 4:00 PM, <i>Tambayan</i> (If I'm not there, then I'm at my other tambayan.)</p>
+		                  <p><b><i>WEDNESDAY</i></b> 12:30 PM - 2:30 PM, 4:00 PM onwards, <i>Tambayan</i></p> 
+		                  <p><b><i>FRIDAY</i></b>4:00 PM onwards, <i>Tambayan</i></p>
+		                </Modal.Description>
+		              </Modal.Content>
+		            </Modal>
+		            </Modal.Description>
+		          </Modal.Content>
+		        </Modal>
+		      </Image.Group>
+		      </div>
+		      <div class='ui hidden divider' />
+		</div>
+	);
+};
+
+export default Orgs;
